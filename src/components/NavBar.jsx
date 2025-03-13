@@ -1,4 +1,3 @@
-// src/components/NavBar.jsx
 import React from 'react';
 import CartWidget from './CartWidget';
 
