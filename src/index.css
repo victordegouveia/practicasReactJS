@@ -1,14 +1,5 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav ul li a:hover {
-  color: #f39c12;
+  box-sizing: border-box;
 }

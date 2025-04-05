@@ -1,38 +1,28 @@
-import React from 'react';
-import CartWidget from './CartWidget';
+import React from "react";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
-  return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>Mi Tienda</div>
-      <ul style={styles.links}>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/productos">Productos</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-      <CartWidget />
+    return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className="container-fluid">
+        <a className="navbar-brand" href="#">Mi Tienda</a>
+        <div className="collapse navbar-collapse">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+                <a className="nav-link" href="#home">Inicio</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#products">Productos</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#contact">Contacto</a>
+            </li>
+            </ul>
+            <CartWidget />
+        </div>
+        </div>
     </nav>
-  );
-};
-
-const styles = {
-  nav: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 20px',
-    backgroundColor: '#333',
-    color: '#fff',
-  },
-  logo: {
-    fontWeight: 'bold',
-    fontSize: '1.5rem',
-  },
-  links: {
-    listStyle: 'none',
-    display: 'flex',
-    gap: '20px',
-  },
+);
 };
 
 export default NavBar;
