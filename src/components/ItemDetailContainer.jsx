@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const { productId } = useParams(); // Obtiene el ID del producto de la URL
+    const { productId } = useParams(); 
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
-    // Simulación de llamada asíncrona para obtener los detalles del producto
+
     const fetchProduct = new Promise((resolve) => {
         setTimeout(() => {
         const productDetails = { id: productId, name: "Producto Detallado", description: "Descripción del producto" };

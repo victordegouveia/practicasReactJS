@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ greeting }) => {
-  const { categoryId } = useParams(); // Obtiene la categoría de la URL
+    const { categoryId } = useParams(); 
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-    // Simulación de llamada asíncrona para obtener productos
     const fetchProducts = new Promise((resolve) => {
         setTimeout(() => {
         const products = [
