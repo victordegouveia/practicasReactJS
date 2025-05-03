@@ -1,12 +1,12 @@
-# React + Vite
+# 🛍 RopaVibe - E-commerce de Moda 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RopaVibe es una plataforma moderna de comercio electrónico enfocada en ofrecer una experiencia fluida y atractiva para los usuarios. Creado con **ReactJS + Vite**, optimizado para dispositivos móviles y con integración de **Firebase Firestore** para una gestión eficiente de productos.
 
-Currently, two official plugins are available:
+## 🌟 Características
+- 🔥 **Rápida navegación** gracias a Vite.
+- 📱 **Diseño responsivo** optimizado para móviles.
+- 🔍 **Filtrado dinámico** por categorías.
+- ⏳ **Carga eficiente de productos** con Firebase.
+- 🎨 **Interfaz moderna** con colores vibrantes.
+- 🔐 **Seguridad** con variables de entorno para claves API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
