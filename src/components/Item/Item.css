@@ -1,0 +1,61 @@
+:root {
+    --color-primario: #FF8C42;
+    --color-secundario: #FFD700;
+    --color-acento: #008DDA;
+    --color-fondo: #FF3E4D;
+    --color-texto: #FFF6E0;
+}
+
+.card {
+    border: 2px solid var(--color-secundario);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-texto);
+    text-align: center;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    color: var(--color-fondo);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-body {
+    font-size: 1.2rem;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--color-texto);
+    background-color: var(--color-acento);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transform: scale(1.05);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}

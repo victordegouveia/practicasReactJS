@@ -1,0 +1,32 @@
+:root {
+    --color-primario: #FF8C42;
+    --color-secundario: #FFD700; 
+    --color-acento: #008DDA; 
+    --color-fondo: #FF3E4D;
+    --color-texto: #FFF6E0;
+}
+
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-texto);
+}
+
+.container-productos > div {
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.container-productos > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
